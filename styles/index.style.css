@@ -11,7 +11,7 @@ body {
     background-color: gray;
 }
 
-form {
+#login, #criar-conta {
     background-color: white;
     max-width: 500px;
     padding: 20px;
@@ -38,7 +38,7 @@ form input[type=password] {
     margin: 10px 0;
 }
 
-form input[type=submit], form button {
+form input[type=submit], button {
     width: 100%;
     height: 38px;
     border-radius: 6px;
@@ -48,7 +48,7 @@ form input[type=submit], form button {
     border: 0;
 }
 
-form button {
+#login button {
     background: green;
     margin-top: 10px;
     position: relative;
@@ -58,17 +58,17 @@ form button {
     transform: translate(-50%);
 }
 
-form p {
+#login p {
     text-align: center;
     margin: 10px;
 }
 
-.separedor {
+#login div {
     border-bottom: 1px solid black;
     align-items: center;
 }
 
-#criar-conta form {
+#criar-conta {
     box-shadow: 10px 10px 20px rgb(53, 53, 53);
 }
 

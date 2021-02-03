@@ -20,14 +20,14 @@
         <h3>Login</h3>
         <input type="text" name="usuario" placeholder="Seu usuario..."/>
         <input type="password" name="senha" placeholder="Sua senha..."/>
-        <input type="submit" name="entrar" value="Entrar"/>
+        <input type="submit" name="entrar" value="Entrar"/>    
+      </form>
         <p><a href="#">Esqueceu a senha?</a></p>
-        <div class="separador"></div>
-        <button onclick="criarConta('abrir')">Criar Conta</button>
-      </form>    
+        <div></div>
+        <button onclick="criarConta('abrir')">Criar Conta</button>    
     </div>
-    <div id="wp" style="background-color: rgba(128, 128, 128, .9); position: fixed; bottom: 0; left: 0; right: 0; top: 0;"></div>
-    <div id="criar-conta">
+    <div id="wp" style="background-color: rgba(128, 128, 128, .9); position: fixed; bottom: 0; left: 0; right: 0; top: 0; display: none;"></div>
+    <div id="criar-conta" style="display: none;">
       <form>
         <div><h1 style="text-align: right; cursor: pointer;" onclick="criarConta('fechar')"><img src="images/icons/fechar.png" width="15px"/></h1><h3>Criar Conta</h3></div>
         <input type="text" name="usuario" placeholder="Seu usuario..."/>
