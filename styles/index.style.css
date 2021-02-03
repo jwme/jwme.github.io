@@ -8,7 +8,7 @@
 }
 
 body {   
-    background-color: lightgray;
+    background-color: gray;
 }
 
 form {
@@ -63,7 +63,15 @@ form p {
     margin: 10px;
 }
 
-form div {
+.separedor {
     border-bottom: 1px solid black;
     align-items: center;
+}
+
+#criar-conta form {
+    box-shadow: 10px 10px 20px rgb(53, 53, 53);
+}
+
+#criar-conta form input[type=submit] {
+    background-color: green;
 }
