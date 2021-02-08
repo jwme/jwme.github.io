@@ -20,23 +20,25 @@
         <h3>Login</h3>
         <input type="text" name="usuario" placeholder="Seu usuario..."/>
         <input type="password" name="senha" placeholder="Sua senha..."/>
-        <input type="submit" name="entrar" value="Entrar"/>    
+        <input type="submit" value="Entrar"/>    
       </form>
         <p><a href="#">Esqueceu a senha?</a></p>
         <div></div>
-        <button onclick="criarConta('abrir')">Criar Conta</button>    
+        <button onclick="abrirCriarConta(true)">Criar Conta</button>    
     </div>
     <div id="wp" style="background-color: rgba(128, 128, 128, .9); position: fixed; bottom: 0; left: 0; right: 0; top: 0; display: none;"></div>
     <div id="criar-conta" style="display: none;">
-      <form>
-        <div><h1 style="text-align: right; cursor: pointer;" onclick="criarConta('fechar')"><img src="images/icons/fechar.png" width="15px"/></h1><h3>Criar Conta</h3></div>
-        <input type="text" name="usuario" placeholder="Seu usuario..."/>
-        <input type="text" name="nome" placeholder="Seu nome..."/>
-        <input type="text" name="sobrenome" placeholder="Seu sobrenome..."/>
-        <input type="password" name="senha" placeholder="Sua senha..."/>
-        <input type="password" name="confirmar" placeholder="Confirme sua senha..."/>
-        <input type="submit" name="criar" value="Cadastre-se"/>
+      <form method="POST" action="javascript:enviarCriarConta()">
+        <div><h1 style="text-align: right; cursor: pointer;" onclick="abrirCriarConta(false)"><img src="images/icons/fechar.png" width="15px"/></h1><h3>Criar Conta</h3></div>
+        <input id="u-cc" type="text" name="usuario" placeholder="Seu usuario..." required/>
+        <input id="n-cc" type="text" name="nome" placeholder="Seu nome..." required/>
+        <input id="sb-cc" type="text" name="sobrenome" placeholder="Seu sobrenome..." required/>
+        <input id="s-cc" type="password" name="senha" placeholder="Sua senha..." required minlength="6"/>
+        <input id="cs-cc" type="password" name="confirmar" placeholder="Confirme sua senha..." required minlength="6"/>
+        <input type="submit" value="Cadastre-se"/>
       </form>
     </div>
+
+    <iframe id="envio" style="display: none;"></iframe>
   </body>
 </html>
