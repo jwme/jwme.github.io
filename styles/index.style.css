@@ -11,6 +11,16 @@ body {
     background-color: white;
 }
 
+#wp {
+    background-color: white;
+    position: fixed; 
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    display: none;
+}
+
 #login, #criar-conta {
     background-color: white;
     padding: 20px;
@@ -75,6 +85,10 @@ form input[type=submit], button {
 @media (min-width: 900px) {
     body {
         background-color: gray;
+    }
+
+    #wp {
+        background-color: rgba(128, 128, 128, .9);
     }
     
     #login, #criar-conta {
