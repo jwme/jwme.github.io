@@ -18,5 +18,5 @@ function enviarCriarConta() {
         confsenha: document.getElementById("cs-cc").value
     }
 
-    document.getElementById("envio").src = `https://script.google.com/macros/s/AKfycbzv4KtjWQoNZ7IfahFl5WYn1Z4mJhSie5o0_OSQ_GC2pYJf9wLI5xEvhw/exec?usuario=${dados.usuario}&nome=${dados.nome}&sobrenome=${dados.sobrenome}&senha=${dados.senha}`;
+    document.getElementById("envio").src = `https://script.google.com/macros/s/AKfycbwq-Rt7BKCY6fRIOuEn9TLykGJaSd9y2V6jwYXfSz2XzvVQrFjtGwM9Xw/exec?usuario=${dados.usuario}&nome=${dados.nome}&sobrenome=${dados.sobrenome}&senha=${dados.senha}`;
 }
