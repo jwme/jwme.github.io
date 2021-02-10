@@ -22,7 +22,7 @@ function enviarCriarConta() {
 
     document.getElementById("envio").src = `https://script.google.com/macros/s/AKfycbzqfg3EEytqJkThxcI8ovhrttMDKMfM2J-0JZKu548/dev?usuario=${dados.usuario}&nome=${dados.nome}&sobrenome=${dados.sobrenome}&senha=${dados.senha}`;
 
-    // loader.style.display = "block";
+    //loader.style.display = "block";
 
     // setTimeout(verificarResposta(dados.usuario), 3000)
 }
