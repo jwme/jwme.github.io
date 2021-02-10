@@ -24,10 +24,10 @@ function enviarCriarConta() {
 
     loader.style.display = "block";
 
-    setTimeout(verificarResposta, 3000)
+    setTimeout(verificarResposta(dados.usuario), 3000)
 }
 
-function verificarResposta() {
+function verificarResposta(usuario) {
     let loader = document.getElementById("loader");
 
     const key = "AIzaSyCuQth5jU0v8OIjICZwvduMc8W0pfA2z3c";
@@ -40,19 +40,21 @@ function verificarResposta() {
                 let resposta = JSON.parse(ajax.responseText);
                 let valores = resposta.values;
 
-                for (let i = 0; i < valores.length;) {
-                    if (dados.usuario == valores[i][0]) {
-                        if (valores[i][1] == "OK") {
-                            loader.innerHTML = '<h1 style="text-align: center;">OK</<h1>'; 
-                        }
-                        else {
-                            loader.innerHTML = '<h1 style="text-align: center;">Erro</<h1>';
-                        }
-                    }
-                    else {
-                        i++;
-                    }
-                }
+                console.log(valores);
+
+                // for (let i = 0; i < valores.length;) {
+                //     if (usuario == valores[i][0]) {
+                //         if (valores[i][1] == "OK") {
+                //             loader.innerHTML = '<h1 style="text-align: center;">OK</<h1>'; 
+                //         }
+                //         else {
+                //             loader.innerHTML = '<h1 style="text-align: center;">Erro</<h1>';
+                //         }
+                //     }
+                //     else {
+                //         i++;
+                //     }
+                // }
             }
         }
 
