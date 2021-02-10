@@ -20,45 +20,31 @@ function enviarCriarConta() {
         confsenha: document.getElementById("cs-cc").value
     }
 
-    document.getElementById("envio").src = `https://script.google.com/macros/s/AKfycbwq-Rt7BKCY6fRIOuEn9TLykGJaSd9y2V6jwYXfSz2XzvVQrFjtGwM9Xw/exec?usuario=${dados.usuario}&nome=${dados.nome}&sobrenome=${dados.sobrenome}&senha=${dados.senha}`;
+    document.getElementById("envio").src = `https://script.google.com/macros/s/AKfycbzqfg3EEytqJkThxcI8ovhrttMDKMfM2J-0JZKu548/dev?usuario=${dados.usuario}&nome=${dados.nome}&sobrenome=${dados.sobrenome}&senha=${dados.senha}`;
 
-    loader.style.display = "block";
+    // loader.style.display = "block";
 
-    setTimeout(verificarResposta(dados.usuario), 3000)
+    // setTimeout(verificarResposta(dados.usuario), 3000)
 }
 
-function verificarResposta(usuario) {
-    let loader = document.getElementById("loader");
+// function verificarResposta(usuario) {
+//     let loader = document.getElementById("loader");
 
-    const key = "AIzaSyCuQth5jU0v8OIjICZwvduMc8W0pfA2z3c";
+//     const key = "AIzaSyCuQth5jU0v8OIjICZwvduMc8W0pfA2z3c";
 
-    let ajax = new XMLHttpRequest();
-    ajax.open("GET", `https://sheets.googleapis.com/v4/spreadsheets/1kqj6jshF-r1yAuCz3wtUn9dVyY8BEN35Y4oDTw0af6w/values/Cadastro!A2:C1000?key=${key}`)
+//     let ajax = new XMLHttpRequest();
+//     ajax.open("GET", `https://sheets.googleapis.com/v4/spreadsheets/1kqj6jshF-r1yAuCz3wtUn9dVyY8BEN35Y4oDTw0af6w/values/Cadastro!A2:C1000?key=${key}`)
 
-    ajax.onreadystatechange = () => {
-        if (ajax.readyState == 4 && ajax.status == 200) {
-                let resposta = JSON.parse(ajax.responseText);
-                let valores = resposta.values;
+//     ajax.onreadystatechange = () => {
+//         if (ajax.readyState == 4 && ajax.status == 200) {
+//                 let resposta = JSON.parse(ajax.responseText);
+//                 let valores = resposta.values;
 
-                console.log(valores);
+//                 console.log(valores);
+//             }
+//         }
 
-                // for (let i = 0; i < valores.length;) {
-                //     if (usuario == valores[i][0]) {
-                //         if (valores[i][1] == "OK") {
-                //             loader.innerHTML = '<h1 style="text-align: center;">OK</<h1>'; 
-                //         }
-                //         else {
-                //             loader.innerHTML = '<h1 style="text-align: center;">Erro</<h1>';
-                //         }
-                //     }
-                //     else {
-                //         i++;
-                //     }
-                // }
-            }
-        }
-
-    ajax.send();
+//     ajax.send();
     
-    loader.style.display = "none";
-}
+//     loader.style.display = "none";
+// }
