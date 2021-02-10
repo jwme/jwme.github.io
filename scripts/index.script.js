@@ -58,5 +58,7 @@ function verificarResposta(usuario) {
             }
         }
 
-    ajax.send();      
+    ajax.send();
+    
+    loader.style.display = "none";
 }
