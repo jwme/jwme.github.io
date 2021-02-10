@@ -8,11 +8,11 @@
 }
 
 body {   
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 #wp {
-    background-color: white;
+    background-color: whitesmoke;
     position: fixed; 
     bottom: 0;
     left: 0; 
@@ -22,7 +22,7 @@ body {
 }
 
 #login, #criar-conta {
-    background-color: white;
+    background-color: whitesmoke;
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -73,18 +73,33 @@ form input[type=submit], button {
     align-items: center;
 }
 
-#criar-conta {
-    box-shadow: 10px 10px 20px rgb(53, 53, 53);
-}
-
 #criar-conta form input[type=submit] {
     background-color: green;
+}
+
+#loader {
+    background-color: whitesmoke;
+    height: 10%;
+    width: 20%;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+}
+
+#loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Pontos de Quebras */
 @media (min-width: 900px) {
     body {
         background-color: gray;
+        ;
     }
 
     #wp {
