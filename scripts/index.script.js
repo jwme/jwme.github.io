@@ -20,7 +20,7 @@ function enviarCriarConta() {
         confsenha: document.getElementById("cs-cc").value
     }
 
-    document.getElementById("envio").src = `https://script.google.com/macros/s/AKfycbzqfg3EEytqJkThxcI8ovhrttMDKMfM2J-0JZKu548/dev?usuario=${dados.usuario}&nome=${dados.nome}&sobrenome=${dados.sobrenome}&senha=${dados.senha}`;
+    document.getElementById("envio").src = `https://script.google.com/macros/s/AKfycbxggNCyGzo80xiX8UFaeIy9Am0hN3X9xVqiVXjBqv8HDfGxjL5c3LMbWA/exec?usuario=${dados.usuario}&nome=${dados.nome}&sobrenome=${dados.sobrenome}&senha=${dados.senha}`;
 
     //loader.style.display = "block";
 
