@@ -81,7 +81,7 @@ form input[type=submit], button {
     background-color: whitesmoke;
     height: auto;
     width: auto;
-    display: block;
+    display: none;
     position: absolute;
     border-radius: 5px;
     padding: 10px;
