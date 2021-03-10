@@ -14,37 +14,6 @@
   </head>
   
   <body>
-    <div id="login">
-      <form>
-        <h1 style="text-align: center;"><img src="images/jwme.png" width="30%"></h1>      
-        <h3>Login</h3>
-        <input type="text" name="usuario" placeholder="Seu usuario..."/>
-        <input type="password" name="senha" placeholder="Sua senha..."/>
-        <input type="submit" value="Entrar"/>    
-      </form>
-        <p><a href="#">Esqueceu a senha?</a></p>
-        <div></div>
-        <button onclick="abrirCriarConta(true)">Criar Conta</button>    
-    </div>
-
-    <div id="wp"></div>
-
-    <div id="criar-conta" style="display: none;">
-      <form method="POST" action="javascript:enviarCriarConta()">
-        <div><h1 style="text-align: right; cursor: pointer;" onclick="abrirCriarConta(false)"><img src="images/icons/fechar.png" width="15px"/></h1><h3>Criar Conta</h3></div>
-        <input id="u-cc" type="text" name="usuario" placeholder="Seu usuario..." required/>
-        <input id="n-cc" type="text" name="nome" placeholder="Seu nome..." required/>
-        <input id="sb-cc" type="text" name="sobrenome" placeholder="Seu sobrenome..." required/>
-        <input id="s-cc" type="password" name="senha" placeholder="Sua senha..." required minlength="6"/>
-        <input id="cs-cc" type="password" name="confirmar" placeholder="Confirme sua senha..." required minlength="6"/>
-        <input type="submit" value="Cadastre-se"/>
-      </form>
-    </div>
-
-    <div id="loader">
-      <img src="images/icons/LoadingBlue.gif" width="50px">
-    </div>
-
-    <iframe id="envio" style="display: none;"></iframe>
+    
   </body>
 </html>
