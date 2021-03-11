@@ -7,117 +7,45 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+:root {
+    --border-radius: 15px;
+}
+
 body {   
     background-color: whitesmoke;
 }
 
-#wp {
-    background-color: whitesmoke;
-    position: fixed; 
-    bottom: 0;
-    left: 0; 
-    right: 0; 
-    top: 0; 
-    display: none;
-}
-
-#login, #criar-conta {
-    background-color: whitesmoke;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-form h3 {
-    text-align: center;
-    color: rgb(41, 106, 247);
-}
-
-form input[type=text],
-form input[type=password] {
-    width: 100%;
-    height: 45px;
-    border: 1px solid rgb(41, 106, 247);
-    border-radius: 6px;
+.cabecalho {
+    background-color: black;
     padding: 10px;
-    margin: 10px 0;
 }
 
-form input[type=submit], button {
-    width: 100%;
-    height: 38px;
-    border-radius: 6px;
-    cursor: pointer;
-    background: rgb(41, 106, 247);
-    color: #fff;
-    border: 0;
+.cabecalho img {
+    width: 50px;
 }
 
-#login button {
-    background: green;
-    margin-top: 10px;
-    width: 40%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-#login p {
-    text-align: center;
+.aulas {
     margin: 10px;
-}
-
-#login div {
-    border-bottom: 1px solid black;
-    align-items: center;
-}
-
-#criar-conta form input[type=submit] {
-    background-color: green;
-}
-
-#loader {
-    background-color: whitesmoke;
-    height: auto;
-    width: auto;
-    display: none;
-    position: absolute;
-    border-radius: 5px;
+    background-color: blue;
     padding: 10px;
-    top: 50%;
-    left: 50%;   
-    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius);
 }
 
-#loader img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#loader h1, p {
+.aulas > div > div h3, h4 {
     text-align: center;
 }
 
-/* Pontos de Quebras */
-@media (min-width: 900px) {
-    body {
-        background-color: gray;
-        ;
-    }
+.aulas > div > div button {
+    width: 150px;
+    margin-top: 25px;
+    border-radius: var(--border-radius);
+    background-color: green;
+    color: white;
+    font-size: 20px;
 
-    #wp {
-        background-color: rgba(128, 128, 128, .9);
-    }
-    
-    #login, #criar-conta {
-        border-radius: 6px;
-        width: 50%;
-        height: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+}
+
+.aulas > h1 {
+    text-align: center;
+    margin-bottom: 10px; 
 }
