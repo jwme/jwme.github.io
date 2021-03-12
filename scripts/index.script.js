@@ -6,7 +6,7 @@ function mudarSlide(direction) {
     let previous = document.getElementById("previous");
 
     if (direction == "right") {
-        if (margin < 300)
+        if (margin < 400)
         {
             margin += 100;
             inner.style.marginLeft = `-${margin}%`;
