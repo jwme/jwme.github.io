@@ -29,7 +29,7 @@
  #slides #inner {
     display: flex;
     transition: margin-left 800ms;
-    width: 400%;
+    width: 600px;
     line-height: 0;
     height: 100px;
  }
