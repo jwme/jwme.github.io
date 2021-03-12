@@ -7,6 +7,7 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="images/jwme.ico">
     <link rel="stylesheet" href="styles/style-index.css">
+    <link rel="stylesheet" href="styles/style-slides.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
@@ -21,9 +22,36 @@
       <h1><strong>Aulas ao vivo agora</strong></h1>
       <div>
         <div>
-          <div><img id="img-prof" src="https://lh3.googleusercontent.com/a-/AOh14GjhnAIMhdnIBRa5EjSS2tDGJt4hr7xuvH6lQIoh=s32-c" width="100" alt="foto do professor"/></div>
-         
+          <div>
+        <button id="previous" onclick="mudarSlide('left')"></button>
+        <div id="slider">
+          <div id=slides>
+            <div id="overflow">
+              <div id="inner">
+                <div class="slide slide_1">
+                  <div class="slide-content">
+                    <img id="img-previous" src="https://lh3.googleusercontent.com/a-/AOh14GgsQO6mubz72nIGBNCk2-mfBFv2_rxVxrZsEroV=s32-c" alt="Professor anterior"/>
+                  </div>
+                </div>
 
+                <div class="slide slide_2">
+                  <div class="slide-content">
+                    <img id="img-ao-vivo" src="https://lh3.googleusercontent.com/a-/AOh14GjhnAIMhdnIBRa5EjSS2tDGJt4hr7xuvH6lQIoh=s32-c" alt="Professor ao vivo"/>
+                  </div>
+                </div>
+
+                <div class="slide slide_3">
+                  <div class="slide-content">
+                    <img id="img-next" src="https://lh3.googleusercontent.com/a-/AOh14Gh-URnu9M1ktUqcHNXUUUmBd3SJKja79McvJug5ow=s32-c" alt="Proximo professor"/>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+          <button id="next" onclick="mudarSlide('right')"></button>
+        </div>
           <h2 id="situacao">Ao Vivo</h2>
           <h3 id="nome-prof">ANDREA MARTINS DE MATTOS OLIVEIRA</h3>
           <h4 id="materia">Matematica</h4>

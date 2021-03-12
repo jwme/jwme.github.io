@@ -36,25 +36,44 @@ body {
     text-align: center;
 }
 
+.aulas > div > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aulas > div > div > div button {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 #situacao {
     color: red;
 }
 
-.aulas > div > div img {
-    border-radius: 50%;
-    margin: 10px;
+/* #img-previous {
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+} */
+
+#img-ao-vivo {
     border: solid 5px rgba(255, 0, 0, 1);
     animation: ao-vivo 1s infinite alternate;
+    width: 100px;
 }
 
-.aulas > div > div div {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+/* #img-next {
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+} */
+
+.aulas > div > div img {
     border-radius: 50%;
-    background-color: rgba(255, 0, 0, 0);
-    width: 120px;
-    height: 120px;
 }
 
 @keyframes ao-vivo {
