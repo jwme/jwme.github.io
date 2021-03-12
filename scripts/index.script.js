@@ -1,4 +1,3 @@
-let indexSlide = 0;
 let margin = 0;
 
 function mudarSlide(direction) {
@@ -31,4 +30,4 @@ function mudarSlide(direction) {
             previous.disabled = true;
         }
     }
-    }
+}
